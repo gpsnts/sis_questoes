@@ -10,10 +10,6 @@ app.get("/", (req, res) => {
 	res.send("<h1>Hello World!</h1>");
 });
 
-app.get("/envs", (req, res) => {
-  res.send(`DB_USER: ${DB_USER}\nDB_PORT: ${DB_PORT}\nDB_PASSWORD: ${DB_PASSWORD}\nDB_HOST: ${DB_HOST}`);
-});
-
 app.listen(port, () => {
   console.log(`Server on port: ${port}`);
 });
